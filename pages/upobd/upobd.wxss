@@ -1,0 +1,21 @@
+/* pages/addobd/addobd.wxss */
+.add {
+  height: 80vh;
+  /* background-color: chartreuse; */
+  margin: 50rpx 70rpx 0;
+}
+.add input {
+  border-bottom: 2rpx solid gray;
+  margin-top: 40rpx;
+  padding-left: 5rpx;
+}
+
+.add button {
+  margin-top: 300rpx;
+}
+.picker{
+  border-bottom: 2rpx solid gray;
+  margin-top: 40rpx;
+  padding-left: 5rpx;
+  color: gray;
+}

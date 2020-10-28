@@ -1,0 +1,181 @@
+<!--pages/cnbd/cnbd.wxml-->
+  <view class="container">
+       <view class="btn">
+          <button disabled="{{isbtn_huidu}}" type="primary" bindtap="huidu">回读车辆数据</button>
+              <!--<button type="primary" bindtap="gjpz">高级配置</button>-->
+       </view>
+       <view class="content">
+          <view class="in">
+             <text>尿素液位:</text>
+             <input value="{{value1}}" class="{{value1 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>尿素温度:</text>
+             <input value="{{value2}}" class="{{value2 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>发动机转速:</text>
+             <input value="{{value3}}" class="{{value3 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>发动机指令扭矩:</text>
+             <input value="{{value4}}" class="{{value4 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>发动机实际扭矩:</text>
+             <input value="{{value5}}" class="{{value5 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>油位:</text>
+             <input value="{{value6}}" class="{{value6 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>油耗:</text>
+             <input value="{{value7}}" class="{{value7 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>车速:</text>
+             <input value="{{value8}}" class="{{value8 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>大气压力:</text>
+             <input value="{{value9}}" class="{{value9 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>发动机冷却液温度:</text>
+             <input value="{{value10}}" class="{{value10 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>SCR入口温度:</text>
+             <input value="{{value11}}" class="{{value11 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>SCR出口温度:</text>
+             <input value="{{value12}}" class="{{value12 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>压差:</text>
+             <input value="{{value13}}" class="{{value13 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>后NOx:</text>
+             <input value="{{value14}}" wx:if="{{value14 != '无数据'&&value14 != '数据有误'}}" disabled></input>
+             <input value="{{value14}}" wx:elif="{{value14 == '无数据'}}" class="red" disabled></input>
+             <input value="{{value14}}" wx:elif="{{value14 == '数据有误'}}" class="yellow" disabled></input>
+          </view>
+          <view class="in">
+             <text>摩擦扭矩:</text>
+             <input value="{{value15}}" class="{{value15 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>车辆运行总里程:</text>
+             <input value="{{value16}}" class="{{value16 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>前NOx:</text>
+             <input value="{{value17}}" wx:if="{{value17 != '无数据'&&value17 !='数据有误'}}" disabled></input>
+             <input value="{{value17}}" wx:elif="{{value17 == '无数据'}}" class="red" disabled></input>
+             <input value="{{value17}}" wx:elif="{{value17 == '数据有误'}}" class="yellow" disabled></input>
+          </view>
+          <view class="in">
+             <text>尿素泵状态:</text>
+             <input value="{{value18}}" class="{{value18 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>尿素泵喷射速度:</text>
+             <input value="{{value19}}" class="{{value19 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>进气量:</text>
+             <input value="{{value20}}" class="{{value20 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>PM浓度:</text>
+             <input value="{{value21}}" class="{{value21 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>PM k值:</text>
+             <input value="{{value22}}" class="{{value22 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>PM不透光度:</text>
+             <input value="{{value23}}" class="{{value23 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <!--<view class="in">
+             <text>油门踏板位置:</text>
+             <input value="{{value24}}" class="{{value24 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>瞬时油耗:</text>
+             <input value="{{value25}}" class="{{value25 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>发动机燃料流量:</text>
+             <input value="{{value26}}" class="{{value26 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>DPF排气温度:</text>
+             <input value="{{value27}}" class="{{value27 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>发动机扭矩模式:</text>
+             <input value="{{value28}}" class="{{value28 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>手刹状态:</text>
+             <input value="{{value29}}" class="{{value29 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>环境温度:</text>
+             <input value="{{value30}}" class="{{value30 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>排气前温度:</text>
+             <input value="{{value31}}" class="{{value31 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>实际尿素喷射量:</text>
+             <input value="{{value32}}" class="{{value32 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>故障指示灯状态:</text>
+             <input value="{{value33}}" class="{{value33 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>进气吱管温度:</text>
+             <input value="{{value34}}" class="{{value34 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>排气后温度:</text>
+             <input value="{{value35}}" class="{{value35 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>机油压力:</text>
+             <input value="{{value36}}" class="{{value36 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>脚刹状态:</text>
+             <input value="{{value37}}" class="{{value37 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>蓄电池电压:</text>
+             <input value="{{value38}}" class="{{value38 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>总耗油:</text>
+             <input value="{{value39}}" class="{{value39 == '无数据'?'red':''}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>发动机总运行时间:</text>
+             <input value="{{value40}}" class="{{value40 == '无数据'?'red':''}}" disabled></input>
+          </view>-->
+          <view class="bottom">
+             
+          </view>
+       </view>
+       <!-- <view class="sy" bindtap="shouye">
+          <text>首页</text>
+       </view> -->
+  </view>
+
+

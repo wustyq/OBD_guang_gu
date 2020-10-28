@@ -1,0 +1,98 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.search {
+  display: flex;
+  margin-top: 10rpx;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+}
+.search input {
+  flex: 1;
+  height: 80rpx;
+  margin-left: 30rpx;
+  border: 1rpx solid gray;
+  border-right: none;
+  padding-left: 8rpx;
+  border-radius: 10rpx 0 0 10rpx;
+  background-color: white;
+}
+.search icon {
+  width: 100rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: center;
+  margin-right: 30rpx;
+  border: 1rpx solid gray;
+  border-left: none;
+  background-color: #1e9fff;
+  border-radius: 0 10rpx  10rpx 0;
+}
+.roll{
+  margin-top: 120rpx;
+}
+.content {
+  flex: 1;
+  margin-top: 10rpx;
+  background-color: #e8f4fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.content .hang {
+  display: flex;
+  width: 100%;
+  border-bottom: 2rpx solid gray;
+}
+.content .hang .left{
+  position: relative;
+  left: 10rpx;
+  color: white;
+  width: 190rpx;
+  border-right: 2rpx solid gray;
+  padding: 5rpx;
+  background-color: #1e9fff;
+}
+.content .hang .right{
+  flex: 1;
+  padding-left: 40rpx;
+  background-color: white;
+}
+.add {
+  position: fixed;
+  z-index: 999;
+  top: 260rpx;
+  right: 20rpx;
+  height: 100rpx;
+  width: 100rpx;
+  background-color: rgba(89, 188, 245,.5);
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: rgb(175, 67, 81);
+}
+.sy{
+  position: fixed;
+  z-index: 999;
+  top: 150rpx;
+  right: 20rpx;
+  height: 100rpx;
+  width: 100rpx;
+  background-color: rgba(89, 188, 245,.5);
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: rgb(175, 67, 81);
+}
+.footer {
+  text-align: center;
+}

@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+       <view class="search">
+            <input placeholder="请输入IMEI或VIN或车牌号或项目" value="{{keyword}}" bindinput="change"></input>
+            <icon class="icon-small" type="search" size="40" color="white" bindtap="sou"/>
+       </view>
+      <scroll-view class="roll" scroll-y="true">
+       <view  class="content" wx:for = "{{msg}}" wx:key = "id">
+          <view class="hang">
+               <text class="left">录入时间:</text>
+               <text class="right">{{item._value["录入时间"]}}</text>
+          </view>
+          <view class="hang">
+               <text class="left">修改时间:</text>
+               <text class="right">{{item._value["修改时间"]}}</text>
+          </view>
+          <view class="hang">
+               <text class="left">IMEI:</text>
+               <text class="right">{{item._value["imei"]}}</text>
+          </view>
+          <view class="hang">
+               <text class="left">SN前缀:</text>
+               <text class="right">{{item._value["sn前缀"]}}</text>
+           </view>
+           <view class="hang">
+               <text class="left">车牌号:</text>
+               <text class="right">{{item._value["车牌号"]}}</text>
+          </view>
+          <view class="hang">
+               <text class="left">车辆VIN:</text>
+               <text class="right">{{item._value["车辆vin"]}}</text>
+          </view>
+          <view class="hang">
+               <text class="left">OBD厂家:</text>
+               <text class="right">{{item._value["obd厂家"]}}</text>
+          </view>
+          <view class="hang">
+               <text class="left">区域:</text>
+               <text class="right">{{item._value["区域"]}}</text>
+          </view>
+          <view class="hang">
+               <text class="left">项目：</text>
+               <text class="right">{{item._value["项目"]}}</text>
+          </view>
+          <view class="hang">
+               <text class="left">录入人：</text>
+               <text class="right">{{item._value["录入人"]}}</text>
+          </view>
+          <view class="hang">
+               <text class="left">修改人：</text>
+               <text class="right">{{item._value["修改人"]}}</text>
+          </view>
+          <view class="hang" wx:if='{{flag}}'>
+               <text class="left">操作</text>
+               <text class="right" style="background-color: green; text-align: center" data-id="{{item._id}}" catchtap="xiugai">修改</text>
+          </view>
+        </view>  
+       </scroll-view>
+       <view class="add" bindtap="addobd">
+          <text>新增</text>
+       </view>
+       <view class="sy" bindtap="shouye">
+          <text>首页</text>
+       </view>
+       <view class="footer" wx:if="{{(msg.length>3?true:false)&&hasmore}}">
+          <text>正在拼命加载中......</text>
+       </view>
+       <view class="footer" wx:if="{{!hasmore}}">
+          <text>别拉了，我也是有底线的！！！</text>
+       </view>
+</view>

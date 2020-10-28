@@ -1,0 +1,6 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<view class="inner">
+  <text class="text1">登出</text>
+  <text class="text2">武科汽车检测中心</text>
+</view>
+<slot></slot>

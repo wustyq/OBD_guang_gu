@@ -1,0 +1,48 @@
+<!--pages/cnbd/cnbd.wxml-->
+  <view class="container">
+       <view class="content">
+          <text class="biaoti">终端状态信息</text>
+          <view class="in">
+             <text>IMEI:</text>
+             <input value="{{imei}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>ICCID:</text>
+             <input value="{{iccid}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>SN:</text>
+             <input value="{{sn}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>网络信号强度:</text>
+             <input value="{{wlxhqd}}" class="{{wlxhqd == 0?'red':'white'}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>网络连接状态:</text>
+             <input value="{{wlljzt}}" class="{{wlljzt == '正常'?'white':'red'}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>GPS定位状态:</text>
+             <input value="{{gpsdwzt}}" class="{{gpsdwzt == '正常'?'white':'red'}}" disabled></input>
+             <!--  -->
+          </view>
+          <view class="in">
+             <text>CAN1通讯状态:</text>
+             <input value="{{can1}}" class="{{can1 == '正常'?'white':'red'}}" disabled></input>
+          </view>
+          <view class="in">
+             <text>CAN2通讯状态:</text>
+             <input value="{{can2}}" class="{{can2 == '正常'?'white':'red'}}" disabled></input>
+          </view>
+          <view class="btn">
+              <button disabled="{{isbtn_huidu}}" type="primary" bindtap="huidu">回读</button>
+              <!--<button type="primary" bindtap="gjpz">高级配置</button>-->
+          </view>
+       </view>
+       <!-- <view class="sy" bindtap="shouye">
+          <text>首页</text>
+       </view> -->
+  </view>
+
+

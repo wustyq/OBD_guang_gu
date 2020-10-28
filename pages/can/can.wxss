@@ -1,0 +1,64 @@
+/* pages/cnbd/cnbd.wxss */
+.sy{
+  position: fixed;
+  z-index: 999;
+  bottom: 150rpx;
+  right: 20rpx;
+  height: 100rpx;
+  width: 100rpx;
+  background-color: rgba(89, 188, 245,.5);
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: rgb(175, 67, 81);
+}
+.biaoti {
+  display: block;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.in {
+  display: flex;
+  margin-top: 40rpx;
+}
+.in text {
+  padding-left: 20rpx;
+}
+.in input {
+  flex: 1;
+}
+.in label {
+  margin-left: 20rpx;
+  font-size: 34rpx;
+  color: red;
+}
+.btn {
+  margin-top: 120rpx;
+}
+.btn button {
+  margin-top: 20rpx;
+}
+.in .red {
+  color: red;
+}
+.in .white {
+  color: rgb(20, 134, 187);
+}
+.in input.btl{
+  display: inline-block;
+  margin-right: 20rpx;
+  margin-left: 30rpx;
+  border: 2rpx solid #e0e0e0;
+  padding-left: 20rpx;
+  color: rgb(20, 134, 187);
+}
+image {
+  margin-top: 30px;
+  height: 160px;
+}
+.hz{
+  display: flex;
+}
+.hz text{
+  flex: 1;
+}

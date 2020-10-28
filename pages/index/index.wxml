@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+       <view class="content">
+            <swiper  indicator-dots='{{false}}' indicator-active-color="#1e9fff" autoplay="{{true}}">
+                  <swiper-item>
+                      <image src="{{domain}}/admin/yuanchengxiaochengxu/imgs/mc_bg.jpg"></image>
+                  </swiper-item>
+                  <!-- <swiper-item>
+                      <image src="https://up.wustcloud.cn/admin/yuanchengxiaochengxu/imgs/zhuye1.png"></image>
+                  </swiper-item>
+                  <swiper-item>
+                      <image src="https://up.wustcloud.cn/admin/yuanchengxiaochengxu/imgs/zhuye2.png"></image>
+                  </swiper-item> -->
+            </swiper>
+            <view class="gongneng">
+               <view class="gn3"></view>
+               <view class="gn1">
+                  <image bindtap="obd" src="{{domain}}/admin/yuanchengxiaochengxu/imgs/bg1.png"></image>
+               </view>
+               <view class="gn3"></view>
+               <view class="gn2">
+                  <image bindtap="cnbd" src="{{domain}}/admin/yuanchengxiaochengxu/imgs/bg2.png"></image>
+               </view>
+               <view class="gn3"></view>
+            </view>
+       </view>
+       <text style="position: absolute;right:5px;bottom:40px;display:inline-block;color:gray;">小程序线上版本号：{{version}}</text>
+       <view class="foot">
+            <view class="zhuye {{hover==1?'active':''}}" catchtap="zy">
+                 <text>首页</text>
+            </view>
+            <view class="logo">
+                 <image src="{{domain}}/admin/yuanchengxiaochengxu/imgs/logo3.png"></image>
+            </view>
+            <view class="wode {{hover==2?'active':''}}" catchtap="wd">
+                 <text>我的</text>
+            </view>
+       </view>
+</view>

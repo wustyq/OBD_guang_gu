@@ -1,0 +1,24 @@
+<view class="add">
+  <input placeholder="请输入IMEI" value="{{imei}}" bindinput="cgimei" maxlength="15"></input>
+  <input placeholder="请输入SN前缀" value="{{sn}}" bindinput="cgsn" maxlength="3"></input>
+  <view style="position: relative;">
+        <input placeholder="请输入车牌号" value="{{carnum}}" bindinput="cgcarnum" maxlength="8"></input>
+        <!-- <view class="iconfont icon-xiangji" catchtap="camera" style="margin-right: 10px;font-size: 25px;font-weight: 700;position:absolute;right:1px;bottom:2px;z-index:999;"></view> -->
+  </view>
+  <view style="position: relative;">
+        <input placeholder="请输入车辆VIN" value="{{vin}}" bindinput="cgvin" maxlength="17"></input>
+        <!-- <view class="iconfont icon-xiangji" catchtap="camera" style="margin-right: 10px;font-size: 25px;font-weight: 700;position:absolute;right:1px;bottom:2px;z-index:999;"></view> -->
+  </view>
+     <picker catchchange="bindPickerChange" value="{{index}}" range="{{obd}}">
+        <view class="picker">
+             {{obd[index]}}
+        </view>
+     </picker>
+     <picker catchchange="bindPickerChange_p" value="{{index_p}}" range="{{project}}">
+        <view class="picker">
+             {{project[index_p]}}
+        </view>
+     </picker>
+  <button type="primary" catchtap="tijiao">确定修改</button>
+</view>
+

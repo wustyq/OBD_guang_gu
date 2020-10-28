@@ -1,0 +1,6 @@
+.gongneng {
+  margin-top: 100px;
+}
+.gongneng button {
+  margin-top: 20px;
+}

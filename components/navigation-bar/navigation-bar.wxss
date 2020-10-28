@@ -1,0 +1,25 @@
+/* 这里的样式只应用于这个自定义组件 */
+.inner {
+  height: 68px;
+  color: red;
+  background-color: #1e9fff;
+}
+.inner .text1 {
+  position: relative;
+  top: 32px;
+  margin-left: 12px;
+  border: 1rpx solid white;
+  padding: 2px;
+  border-radius: 20rpx;
+  background-color: rgba(255, 255, 255, .5);
+  color: black;
+  height: 23px;
+  display: inline-block;
+}
+.inner .text2 {
+  position: relative;
+  top: 28px;
+  color: black;
+  left: 55px;
+  font-size: 13px;
+}

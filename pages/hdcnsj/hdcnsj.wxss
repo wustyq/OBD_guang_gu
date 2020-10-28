@@ -1,0 +1,45 @@
+.biaoti {
+  display: block;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.in {
+  display: flex;
+  margin-top: 40rpx;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+.in text {
+  padding-left: 20rpx;
+  width: 140px;
+}
+.in input {
+  flex: 1;
+  display: inline-block;
+  margin-right: 20rpx;
+  /* border: 2rpx solid #e0e0e0; */
+  padding-left: 20rpx;
+  color: rgb(20, 134, 187);
+}
+.in label {
+  margin-left: 20rpx;
+  font-size: 34rpx;
+  color: red;
+}
+.btn {
+  margin-top: 40rpx;
+}
+.btn button {
+  margin-top: 20rpx;
+}
+.bottom{
+  display: inline-block;
+  height: 30rpx;
+  width: 100vw;
+}
+.in .red {
+  color: red;
+}
+.in .yellow {
+  color: rgb(180, 180, 6);
+}

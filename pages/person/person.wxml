@@ -1,0 +1,10 @@
+<!--pages/addobd/addobd.wxml-->
+<view class="add">
+  <input placeholder="请输入用户名" value="{{username}}" bindinput="cgusername" maxlength="6" disabled="disable"></input>
+  <input placeholder="请输入密码" value="{{password}}" bindinput="cgpassword" type="password"></input>
+  <input placeholder="请确认密码" value="{{psd}}" bindinput="cgpsd" type="password"></input>
+  <input placeholder="请输入手机号" value="{{phone}}" bindinput="cgphone" maxlength="11"></input>
+  <input placeholder="请输入邮箱" value="{{email}}" bindinput="cgemail"></input>
+  <button type="primary" catchtap="tijiao" class="xiugai">确认修改</button>
+  <button wx:if='{{kyf}}' type="primary" catchtap="fanhui" class="shouye">返回首页</button>
+</view>

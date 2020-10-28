@@ -1,0 +1,55 @@
+<!--pages/cnbd/cnbd.wxml-->
+  <view class="container">
+       <view class="content">
+          <text class="biaoti">高级配置</text>
+          <view class="section">
+            <view class="section__title">CAN1波特率:</view>
+              <picker class="picker" bindchange="Picker_can1" value="{{index_can1}}" range="{{array_can1}}">
+                  <view>
+                    {{array_can1[index_can1]}}
+                  </view>
+               </picker>
+          </view>
+          <view class="section">
+            <view class="section__title">CAN2波特率:</view>
+              <picker class="picker" bindchange="Picker_can2" value="{{index_can2}}" range="{{array_can2}}">
+                  <view>
+                    {{array_can2[index_can2]}}
+                  </view>
+               </picker>
+          </view>
+          <view class="section">
+            <view class="section__title">终端休眠:</view>
+              <picker class="picker" bindchange="Picker_xm" value="{{index_xm}}" range="{{array_xm}}">
+                  <view>
+                    {{array_xm[index_xm]}}
+                  </view>
+               </picker>
+          </view>
+          <view class="section">
+            <view class="section__title">CAN1唤醒:</view>
+              <picker class="picker" bindchange="Picker_can1_h" value="{{index_can1_h}}" range="{{array_can1_h}}">
+                  <view>
+                    {{array_can1_h[index_can1_h]}}
+                  </view>
+               </picker>
+          </view>
+          <view class="section">
+            <view class="section__title">CAN2唤醒:</view>
+              <picker class="picker" bindchange="Picker_can2_h" value="{{index_can2_h}}" range="{{array_can2_h}}">
+                  <view>
+                    {{array_can2_h[index_can2_h]}}
+                  </view>
+               </picker>
+          </view>
+          <view class="btn">
+              <button disabled="{{isbtn_xiafa}}" type="primary" bindtap="xiafa">下发</button>
+              <button disabled="{{isbtn_huidu}}" type="primary" bindtap="huidu">回读</button>
+          </view>
+       </view>
+       <!-- <view class="sy" bindtap="shouye">
+          <text>首页</text>
+       </view> -->
+  </view>
+
+

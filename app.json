@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/obd/obd",
+    "pages/person/person",
+    "pages/addobd/addobd",
+    "pages/upobd/upobd",
+    "pages/cnbd/cnbd",
+    "pages/search/search",
+    "pages/service/service",
+    "pages/characteristic/characteristic",
+    "pages/com/com",
+    "pages/lingshi/lingshi",
+    "pages/zhuangtai/zhuangtai",
+    "pages/gaojipeizhi/gaojipeizhi",
+    "pages/pzcs/pzcs",
+    "pages/hdcnsj/hdcnsj",
+    "pages/can/can"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#1e9fff",
+    "navigationBarTitleText": "OBD安装信息采集",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false
+  },
+  "debug": true,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

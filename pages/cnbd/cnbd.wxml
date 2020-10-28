@@ -1,0 +1,39 @@
+<!--pages/cnbd/cnbd.wxml-->
+  <view class="container">
+       <view class="content">
+          <text class="biaoti">VIN</text>
+          <view class="in">
+             <text>SN前缀:</text>
+             <input value="{{sn}}" catchinput="cgsn" maxlength="3"></input>
+          </view>
+          <view class="in">
+             <text>车牌号:</text>
+             <input value="{{carnum}}" catchblur="cgcarnum" maxlength="8"></input>
+             <view class="iconfont icon-xiangji" catchtap="camera" style="margin-right: 10px;font-size: 25px;font-weight: 700;"></view>
+          </view>
+          <view class="in">
+             <text>车辆VIN:</text>
+             <input value="{{vin}}" catchinput="cgvin" maxlength="17"></input>
+             <view class="iconfont icon-xiangji" catchtap="camera" style="margin-right: 10px;font-size: 25px;;font-weight: 700;"></view>
+          </view>
+          <view class="infb">
+           <checkbox-group catchchange="checkboxChange">
+             <label class="checkbox" wx:if = "{{xs_flag}}">
+                 <checkbox checked="{{checked}}" value="1" />已在服务器上注册过（勾选后终端将不发起注册流程，直接登入）
+             </label>
+           </checkbox-group>
+          </view>
+          <view class="btn">
+              <button disabled='{{isbtn_send}}' type="primary" catchtap="send">下发</button>
+              <button disabled='{{isbtn_huidu}}' type="primary" catchtap="huidu">回读</button>
+              <button type="primary" catchtap="huifu">重填上次配置</button>
+              <button disabled='{{isbtn_restart}}' type="primary" catchtap="restart">重启OBD终端</button>
+              <!--<button type="primary" bindtap="zhuangtai">状态</button>-->
+          </view>
+       </view>
+       <view  bindtap="xs_flag" class="xianshi">
+       </view>
+      <!-- <view class="sy" bindtap="shouye">
+          <text>首页</text>
+       </view>-->
+  </view>

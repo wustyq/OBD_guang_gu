@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<view class="container">
+    <view class="zhanghao">
+          <text>账号</text>
+          <input placeholder="请输入平台分配的账号" value="{{yhm}}" bindinput="changeyhm"></input> 
+     </view>
+     <view class="mima">
+          <text>密码</text>
+          <input password="true" placeholder="请输入平台分配的密码" value="{{mima}}" bindinput="changemima"></input> 
+     </view>
+     <button type="primary" bindtap="denglu">登录</button>
+     <view style="text-align: center;margin-top:60vh;">威海鸣川OBD安装信息采集</view>
+</view>

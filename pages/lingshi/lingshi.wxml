@@ -1,0 +1,5 @@
+<!--pages/lingshi/lingshi.wxml-->
+<view class="content">
+     <button type= 'primary' bindtap="shangchuan">上传</button>
+     <button type= 'primary' bindtap="yiweima">上传</button>
+</view>

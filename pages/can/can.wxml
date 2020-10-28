@@ -1,0 +1,26 @@
+<!--pages/cnbd/cnbd.wxml-->
+  <view class="container">
+       <view class="content">
+          <text class="biaoti">CAN检测</text>
+          <view class="in">
+             <text>波特率:</text>
+             <input class="btl" value="{{btl}}" disabled></input>
+             <input disabled></input>
+             <input disabled></input>
+          </view>
+          <view class="hz">
+             <text></text> 
+             <image src="{{dk}}"></image>
+             <text></text>
+          </view>
+          <view class="btn">
+              <button disabled="{{isbtn_huidu}}" type="primary" bindtap="huidu">检测</button>
+              <!--<button type="primary" bindtap="gjpz">高级配置</button>-->
+          </view>
+       </view>
+       <!-- <view class="sy" bindtap="shouye">
+          <text>首页</text>
+       </view> -->
+  </view>
+
+

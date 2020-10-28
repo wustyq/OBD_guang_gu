@@ -1,0 +1,7 @@
+<view class="gongneng">
+    <button type="primary" bindtap="vin">VIN</button>
+    <button type="primary" bindtap="zd">终端状态信息</button>
+    <button type="primary" bindtap="gj">高级配置</button>
+    <button type="primary" bindtap="hd">回读车辆数据</button>
+    <button type="primary" bindtap="can">CAN检测</button>
+</view>
